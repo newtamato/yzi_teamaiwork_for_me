@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "name": "yatzi_workspace",
+  "defaultBranch": "main",
+  "taskPrefix": "codex/",
+  "repository": { "provider": "gitee", "slug": "", "remote": "" },
+  "checks": [],
+  "release": { "enabled": false, "commands": [] },
+  "capabilities": { "enabled": false, "sources": [], "sourceDirectories": [], "commands": [], "exclusions": [] }
+}

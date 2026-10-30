@@ -1,0 +1,32 @@
+{
+  "decision": "none",
+  "summary": "本次新增模板抽取及维护文档，事实保存在权威文档中，不向可复用模板知识库重复写入历史流水。",
+  "readPaths": [
+    "memory/INDEX.md",
+    "rules/memory.md",
+    "rules/development.md",
+    "rules/skills.md"
+  ],
+  "triggers": [
+    {
+      "kind": "none",
+      "evidence": "模板长期维护定位将另记用户要求的个人记忆，公开模板保持空初始知识库。"
+    }
+  ],
+  "entries": [],
+  "skillReview": [
+    {
+      "decision": "none",
+      "reason": "本次任务是记录已有抽取与维护机制，已有task-delivery和scheduled-audit覆盖流程，不新增重复技能。",
+      "recurrence": "长期维护流程已经存在于规则和已有Skill，文档作为检索及历史证据入口。",
+      "evidence": [
+        "新增文档链接现有规范和真实验收，不引入新的操作流程或技能代码。"
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "task": "extraction-document",
+  "branch": "codex/extraction-document",
+  "base": "1d4a7fd0c1792b7385092edb0a16ab6286234561",
+  "sourceFingerprint": "c7fa7e7eda542d9d133ea4694c1d285c37e0f2d2753b98e51833ebf007b283fb"
+}

@@ -1,0 +1,13 @@
+node_modules/
+.runtime
+.worktree
+.claude/skills
+.env
+.env.*
+*.sqlite*
+*.xlsx
+coverage/
+
+# Existing business repositories managed independently.
+Yatzy/
+YatzyServer/

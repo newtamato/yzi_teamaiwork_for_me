@@ -1,0 +1,48 @@
+{
+  "decision": "none",
+  "summary": "本次抽取的是公开模板规范和工具，不迁移源知识，也不在空知识库写入重复规则。",
+  "readPaths": [
+    "memory/INDEX.md",
+    "rules/memory.md",
+    "rules/skills.md",
+    "rules/development.md"
+  ],
+  "triggers": [
+    {
+      "kind": "none",
+      "evidence": "模板只保留机制与合成示例；实际项目知识没有进入此新仓库。"
+    }
+  ],
+  "entries": [],
+  "skillReview": [
+    {
+      "decision": "create",
+      "target": ".agents/skills/task-delivery/SKILL.md",
+      "reason": "模板使用者会重复交付开发任务，需固化如何运行实际审计与验收命令。",
+      "recurrence": "新项目每次修改任务都需完成同一交付核验流程。",
+      "evidence": [
+        "通用记忆/Skill守卫及工程CLI已经解耦，合成测试验证通过。"
+      ],
+      "validation": [
+        "已核对task/review/check/merge-check实际命令与Skill步骤，门禁合成测试通过。"
+      ]
+    },
+    {
+      "decision": "create",
+      "target": ".agents/skills/scheduled-audit/SKILL.md",
+      "reason": "定时一句触发模式需配一个真实可执行且无业务数据的只读审计流程。",
+      "recurrence": "可定时重复或手动执行治理审计，不复制每个触发器的长流程。",
+      "evidence": [
+        "已验证定时示例实际引用此Skill，automation check成功。"
+      ],
+      "validation": [
+        "只读任务状态/记忆/能力检查命令存在，非法多行提示在合成测试中被拒绝。"
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "task": "template-extraction",
+  "branch": "codex/template-extraction",
+  "base": "18cf96c6d178fc1d890ba42f3794251934082c3f",
+  "sourceFingerprint": "f42455e2cd6dbc0e791ebb1cbc3eabfa58876b1a78d29436dc20e795bd4b05ff"
+}
